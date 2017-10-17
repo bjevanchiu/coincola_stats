@@ -1,0 +1,1200 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="coincola, bitcoin, Bitcoin, OTC, CoinCola, 比特币, 可盈可乐, 场外交易, 比特币买卖, p2p, 区块链, blockchain, localbitcoins">
+<meta name="description" content="一个自由买卖安全可信赖的比特币交易平台">
+<link rel="shortcut icon" href="/static/imgs/favicon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="coincola, bitcoin, Bitcoin, OTC, CoinCola, 比特币, 可盈可乐, 场外交易, 比特币买卖, p2p, 区块链, blockchain, localbitcoins">
+<meta name="description" content="一个自由买卖安全可信赖的比特币交易平台">
+<link rel="shortcut icon" href="/static/imgs/favicon.ico" type="image/x-icon" />
+
+
+
+  <title>購買比特幣</title>
+  <link rel="stylesheet" href="/static/css/common_6c0cbe197f.css">
+  <link rel="stylesheet" href="/static/css/buy_2a0acc48d5.css">
+</head>
+<body class="buy-page zh-HK">
+  <input type="" style="display: none" name="_csrf" value="Up4qkKZb-ITCqaBZpAeMcu636xvx_x87fWKk">
+<div class="header zh-HK">
+  <div class="clear-float">
+    <a class="" href="/"><div class="logo sp1 img"></div></a>
+    <div class="nav clear-float fl">
+      <a class="nav-item " href="/">首頁</a>
+      <a class="nav-item  current " href="/buy?country_code=CN&payment_provider=ALIPAY&currency=CNY">購買比特幣</a>
+      <a class="nav-item " href="/sell?country_code=CN&payment_provider=ALIPAY&currency=CNY">出售比特幣</a>
+      <a class="nav-item " href="/new-ad">發布廣告</a>
+      <a class="nav-item " href="/activities/invite">邀請好友<span class="icon-new"></span></a>
+      <!-- <a class="nav-item " href="/help">幫助</a> -->
+
+    </div>
+    <div class="clear-float fr login-panel" style="display:none">
+      <a class="user-action" href="/signup/phone"><span class="sp sp-register"></span><span class="va-middle">註冊</span></a>
+      <a class="user-action btn-login" href="/login/phone"><span class="sp sp-login"></span><span class="va-middle">登錄</span></a>
+    </div>
+    <div class="clear-float fr my-panel" style="display:none">
+      <div  class="item">
+        <a href="/order-list/processing" class="item-label"><span class="header-order"></span> <span>訂單</span> <span class="message-count" style="display: none"></span> <span class="header-spread"></span></a>
+        <div class="item-more item-message"></div>
+      </div>
+      <div class="item" >
+        <a href="/wallet/charge" class="item-label"><span class="header-wallet"></span> <span class="va-mid">錢包</span> <span class="header-spread"></span></a>
+        <div class="item-more item-wallet">
+          <div class="wallet-item pt-10">
+            <span class="col-33 pd">可用資產</span><span class="col-33  account_available">฿ <span>0.00</span></span>
+            <span class="col-33 pd">凍結資產</span><span class="col-33  account_locked">฿ <span>0.00</span></span>
+            <span class="col-33 pd">總資產</span><span class="col-33 account_total">฿ <span>0.00</span></span>
+            <a href="/wallet/charge" class="btn ml-20">充值</a>
+            <a href="/wallet/deposit" class="btn ml-10 mb-10">提現</a>
+            <a class="refresh-wallet">刷新</a>
+          </div>
+        </div>
+      </div>
+      <div class="item" >
+        <a href="/setting/user-profile" class="item-label  width-110"><span class="header-user"></span> <span class="username"></span> <span class="header-spread"></span></a>
+        <div class="item-more item-my width-110">
+          <a class="link" href="/setting/user-profile">用戶中心</a>
+          <!-- <a class="link" href="/manage/order-sell">我的交易</a> -->
+          <a class="link" href="/manage/ad-buy">我的廣告</a>
+          <a class="link" href="/activities/invite">邀請好友</a>
+          <a class="link" href="/reward-center">禮品中心</a>
+          <a class="link" id="logout" href="javascript:;">退出</a>
+        </div>
+      </div>
+    </div>
+    <div class="opt">
+      <div class="opt-line"></div>
+      <div class="opt-line"></div>
+      <div class="opt-line"></div>
+    </div>
+  </div>
+</div>
+<!-- <div class="float-cont">
+  <div class="cont-item">需要幫助</div>
+</div> -->
+
+  <div class="search-cont clear-float">
+    <div class="search-filter"><span class="type-text">搜廣告</span> <span class="arrow-down-blue"></span>
+      <div class="search-type">
+        <a href="javascript:;" type="ad" class="type-item">搜廣告</a>
+        <a href="javascript:;" type="user" class="type-item">搜用戶</a>
+      </div>
+    </div>
+    <div class="input-cont search-input" style="display:none;">
+      <input class="input  ta-l" name="name" placeholder="請輸入用戶名">
+    </div>
+    <div class="ad-opt">
+      <select class="search-filter" name="country_code" searchable>
+
+          <option value="AO"   >AO 安哥拉</option>
+
+          <option value="AF"   >AF 阿富汗</option>
+
+          <option value="AL"   >AL 阿爾巴尼亞</option>
+
+          <option value="DZ"   >DZ 阿爾及利亞</option>
+
+          <option value="AD"   >AD 安道爾共和國</option>
+
+          <option value="AI"   >AI 安圭拉島</option>
+
+          <option value="AG"   >AG 安提瓜和巴布達</option>
+
+          <option value="AR"   >AR 阿根廷</option>
+
+          <option value="AM"   >AM 亞美尼亞</option>
+
+          <option value="AU"   >AU 澳大利亞</option>
+
+          <option value="AT"   >AT 奧地利</option>
+
+          <option value="AZ"   >AZ 阿塞拜疆</option>
+
+          <option value="BS"   >BS 巴哈馬</option>
+
+          <option value="BH"   >BH 巴林</option>
+
+          <option value="BD"   >BD 孟加拉國</option>
+
+          <option value="BB"   >BB 巴巴多斯</option>
+
+          <option value="BY"   >BY 白俄羅斯</option>
+
+          <option value="BE"   >BE 比利時</option>
+
+          <option value="BZ"   >BZ 伯利茲</option>
+
+          <option value="BJ"   >BJ 貝寧</option>
+
+          <option value="BM"   >BM 百慕大群島</option>
+
+          <option value="BO"   >BO 玻利維亞</option>
+
+          <option value="BW"   >BW 博茨瓦納</option>
+
+          <option value="BR"   >BR 巴西</option>
+
+          <option value="BN"   >BN 文萊</option>
+
+          <option value="BG"   >BG 保加利亞</option>
+
+          <option value="BF"   >BF 布基納法索</option>
+
+          <option value="MM"   >MM 緬甸</option>
+
+          <option value="BI"   >BI 布隆迪</option>
+
+          <option value="CM"   >CM 喀麥隆</option>
+
+          <option value="CA"   >CA 加拿大</option>
+
+          <option value="CF"   >CF 中非共和國</option>
+
+          <option value="TD"   >TD 乍得</option>
+
+          <option value="CL"   >CL 智利</option>
+
+          <option value="CN"   selected  >CN 中國</option>
+
+          <option value="CG"   >CG 剛果</option>
+
+          <option value="CK"   >CK 庫克群島</option>
+
+          <option value="CR"   >CR 哥斯達黎加</option>
+
+          <option value="CU"   >CU 古巴</option>
+
+          <option value="CY"   >CY 塞浦路斯</option>
+
+          <option value="CZ"   >CZ 捷克</option>
+
+          <option value="DK"   >DK 丹麥</option>
+
+          <option value="DJ"   >DJ 吉布提</option>
+
+          <option value="DO"   >DO 多米尼加共和國</option>
+
+          <option value="EC"   >EC 厄瓜多爾</option>
+
+          <option value="EG"   >EG 埃及</option>
+
+          <option value="SV"   >SV 薩爾瓦多</option>
+
+          <option value="EE"   >EE 愛沙尼亞</option>
+
+          <option value="ET"   >ET 埃塞俄比亞</option>
+
+          <option value="FJ"   >FJ 斐濟</option>
+
+          <option value="FI"   >FI 芬蘭</option>
+
+          <option value="FR"   >FR 法國</option>
+
+          <option value="GF"   >GF 法屬圭亞那</option>
+
+          <option value="GA"   >GA 加蓬</option>
+
+          <option value="GM"   >GM 岡比亞</option>
+
+          <option value="GE"   >GE 格魯吉亞</option>
+
+          <option value="DE"   >DE 德國</option>
+
+          <option value="GH"   >GH 加納</option>
+
+          <option value="GI"   >GI 直布羅陀</option>
+
+          <option value="GR"   >GR 希臘</option>
+
+          <option value="GD"   >GD 格林納達</option>
+
+          <option value="GU"   >GU 關島</option>
+
+          <option value="GT"   >GT 危地馬拉</option>
+
+          <option value="GN"   >GN 幾內亞</option>
+
+          <option value="GY"   >GY 圭亞那</option>
+
+          <option value="HT"   >HT 海地</option>
+
+          <option value="HN"   >HN 洪都拉斯</option>
+
+          <option value="HK"   >HK 中國香港</option>
+
+          <option value="HU"   >HU 匈牙利</option>
+
+          <option value="IS"   >IS 冰島</option>
+
+          <option value="IN"   >IN 印度</option>
+
+          <option value="ID"   >ID 印度尼西亞</option>
+
+          <option value="IR"   >IR 伊朗</option>
+
+          <option value="IQ"   >IQ 伊拉克</option>
+
+          <option value="IE"   >IE 愛爾蘭</option>
+
+          <option value="IL"   >IL 以色列</option>
+
+          <option value="IT"   >IT 意大利</option>
+
+          <option value="JM"   >JM 牙買加</option>
+
+          <option value="JP"   >JP 日本</option>
+
+          <option value="JO"   >JO 約旦</option>
+
+          <option value="KH"   >KH 柬埔寨</option>
+
+          <option value="KZ"   >KZ 哈薩克斯坦</option>
+
+          <option value="KE"   >KE 肯尼亞</option>
+
+          <option value="KR"   >KR 韓國</option>
+
+          <option value="KW"   >KW 科威特</option>
+
+          <option value="KG"   >KG 吉爾吉斯坦</option>
+
+          <option value="LA"   >LA 老撾</option>
+
+          <option value="LV"   >LV 拉脫維亞</option>
+
+          <option value="LB"   >LB 黎巴嫩</option>
+
+          <option value="LS"   >LS 萊索托</option>
+
+          <option value="LR"   >LR 利比里亞</option>
+
+          <option value="LY"   >LY 利比亞</option>
+
+          <option value="LI"   >LI 列支敦士登</option>
+
+          <option value="LT"   >LT 立陶宛</option>
+
+          <option value="LU"   >LU 盧森堡</option>
+
+          <option value="MO"   >MO 中國澳門</option>
+
+          <option value="MG"   >MG 馬達加斯加</option>
+
+          <option value="MW"   >MW 馬拉維</option>
+
+          <option value="MY"   >MY 馬來西亞</option>
+
+          <option value="MV"   >MV 馬爾代夫</option>
+
+          <option value="ML"   >ML 馬里</option>
+
+          <option value="MT"   >MT 馬耳他</option>
+
+          <option value="MU"   >MU 毛里求斯</option>
+
+          <option value="MX"   >MX 墨西哥</option>
+
+          <option value="MD"   >MD 摩爾多瓦</option>
+
+          <option value="MC"   >MC 摩納哥</option>
+
+          <option value="MN"   >MN 蒙古</option>
+
+          <option value="MS"   >MS 蒙特塞拉特島</option>
+
+          <option value="MA"   >MA 摩洛哥</option>
+
+          <option value="MZ"   >MZ 莫桑比克</option>
+
+          <option value="NA"   >NA 納米比亞</option>
+
+          <option value="NR"   >NR 瑙魯</option>
+
+          <option value="NP"   >NP 尼泊爾</option>
+
+          <option value="NL"   >NL 荷蘭</option>
+
+          <option value="NZ"   >NZ 新西蘭</option>
+
+          <option value="NI"   >NI 尼加拉瓜</option>
+
+          <option value="NE"   >NE 尼日爾</option>
+
+          <option value="NG"   >NG 尼日利亞</option>
+
+          <option value="KP"   >KP 朝鮮</option>
+
+          <option value="NO"   >NO 挪威</option>
+
+          <option value="OM"   >OM 阿曼</option>
+
+          <option value="PK"   >PK 巴基斯坦</option>
+
+          <option value="PA"   >PA 巴拿馬</option>
+
+          <option value="PG"   >PG 巴布亞新幾內亞</option>
+
+          <option value="PY"   >PY 巴拉圭</option>
+
+          <option value="PE"   >PE 秘魯</option>
+
+          <option value="PH"   >PH 菲律賓</option>
+
+          <option value="PL"   >PL 波蘭</option>
+
+          <option value="PF"   >PF 法屬玻利尼西亞</option>
+
+          <option value="PT"   >PT 葡萄牙</option>
+
+          <option value="PR"   >PR 波多黎各</option>
+
+          <option value="QA"   >QA 卡塔爾</option>
+
+          <option value="RO"   >RO 羅馬尼亞</option>
+
+          <option value="RU"   >RU 俄羅斯</option>
+
+          <option value="LC"   >LC 聖盧西亞</option>
+
+          <option value="VC"   >VC 聖文森特島</option>
+
+          <option value="SM"   >SM 聖馬力諾</option>
+
+          <option value="ST"   >ST 聖多美和普林西比</option>
+
+          <option value="SA"   >SA 沙特阿拉伯</option>
+
+          <option value="SN"   >SN 塞內加爾</option>
+
+          <option value="SC"   >SC 塞舌爾</option>
+
+          <option value="SL"   >SL Leone  塞拉利昂</option>
+
+          <option value="SG"   >SG 新加坡</option>
+
+          <option value="SK"   >SK 斯洛伐克</option>
+
+          <option value="SI"   >SI 斯洛文尼亞</option>
+
+          <option value="SB"   >SB 所羅門群島</option>
+
+          <option value="SO"   >SO 索馬里</option>
+
+          <option value="ZA"   >ZA 南非</option>
+
+          <option value="ES"   >ES 西班牙</option>
+
+          <option value="LK"   >LK 斯里蘭卡</option>
+
+          <option value="LC"   >LC 聖盧西亞</option>
+
+          <option value="VC"   >VC 聖文森特</option>
+
+          <option value="SD"   >SD 蘇丹</option>
+
+          <option value="SR"   >SR 蘇里南</option>
+
+          <option value="SZ"   >SZ 斯威士蘭</option>
+
+          <option value="SE"   >SE 瑞典</option>
+
+          <option value="CH"   >CH 瑞士</option>
+
+          <option value="SY"   >SY 敘利亞</option>
+
+          <option value="TW"   >TW 中國台灣</option>
+
+          <option value="TJ"   >TJ 塔吉克斯坦</option>
+
+          <option value="TZ"   >TZ 坦桑尼亞</option>
+
+          <option value="TH"   >TH 泰國</option>
+
+          <option value="TG"   >TG 多哥</option>
+
+          <option value="TO"   >TO 湯加</option>
+
+          <option value="TT"   >TT 特立尼達和多巴哥</option>
+
+          <option value="TN"   >TN 突尼斯</option>
+
+          <option value="TR"   >TR 土耳其</option>
+
+          <option value="TM"   >TM 土庫曼斯坦</option>
+
+          <option value="UG"   >UG 烏干達</option>
+
+          <option value="UA"   >UA 烏克蘭</option>
+
+          <option value="AE"   >AE 阿拉伯聯合酋長國</option>
+
+          <option value="GB"   >GB 英國</option>
+
+          <option value="US"   >US 美國</option>
+
+          <option value="UY"   >UY 烏拉圭</option>
+
+          <option value="UZ"   >UZ 烏茲別克斯坦</option>
+
+          <option value="VE"   >VE 委內瑞拉</option>
+
+          <option value="VN"   >VN 越南</option>
+
+          <option value="YE"   >YE 也門</option>
+
+          <option value="YU"   >YU 南斯拉夫</option>
+
+          <option value="ZW"   >ZW 津巴布韋</option>
+
+          <option value="ZR"   >ZR 扎伊爾</option>
+
+          <option value="ZM"   >ZM 贊比亞</option>
+
+      </select>
+      <select class="search-filter" name="currency" searchable>
+         <option value=""  selected>貨幣</option>
+
+          <option value="AED" > AED 阿聯酋迪拉姆</option>
+
+          <option value="AFN" > AFN 阿富汗尼</option>
+
+          <option value="ALL" > ALL 阿爾巴尼列克</option>
+
+          <option value="AMD" > AMD 亞美尼亞德拉姆</option>
+
+          <option value="ANG" > ANG 荷蘭盾</option>
+
+          <option value="AOA" > AOA 安哥拉寬扎</option>
+
+          <option value="ARS" > ARS 阿根廷比索</option>
+
+          <option value="AUD" > AUD 澳元</option>
+
+          <option value="AWG" > AWG 阿魯巴弗羅林</option>
+
+          <option value="AZN" > AZN 阿塞拜疆馬納特</option>
+
+          <option value="BAM" > BAM 波黑可兌換馬克</option>
+
+          <option value="BBD" > BBD 巴巴多斯元</option>
+
+          <option value="BDT" > BDT 孟加拉國塔卡</option>
+
+          <option value="BGN" > BGN 保加利亞列弗</option>
+
+          <option value="BHD" > BHD 巴林第納爾</option>
+
+          <option value="BIF" > BIF 布隆迪法郎</option>
+
+          <option value="BMD" > BMD 百慕大元</option>
+
+          <option value="BND" > BND 文萊元</option>
+
+          <option value="BOB" > BOB 玻利維亞諾</option>
+
+          <option value="BRL" > BRL 巴西雷亞爾</option>
+
+          <option value="BSD" > BSD 巴哈馬元</option>
+
+          <option value="BTN" > BTN 不丹努扎姆</option>
+
+          <option value="BWP" > BWP 博茨瓦納普拉</option>
+
+          <option value="BYN" > BYN 新白俄羅斯盧布</option>
+
+          <option value="BYR" > BYR 白俄羅斯盧布</option>
+
+          <option value="BZD" > BZD 伯利茲元</option>
+
+          <option value="CAD" > CAD 加元</option>
+
+          <option value="CDF" > CDF 剛果法郎</option>
+
+          <option value="CHF" > CHF 瑞士法郎</option>
+
+          <option value="CLF" > CLF 智利比索(基金)</option>
+
+          <option value="CLP" > CLP 智利比索</option>
+
+          <option value="CNY"  selected > CNY 人民幣</option>
+
+          <option value="COP" > COP 哥倫比亞比索</option>
+
+          <option value="CRC" > CRC 哥斯達黎加科朗</option>
+
+          <option value="CUP" > CUP 古巴比索</option>
+
+          <option value="CVE" > CVE 佛得角埃斯庫多</option>
+
+          <option value="CZK" > CZK 捷克克朗</option>
+
+          <option value="DJF" > DJF 吉布提法郎</option>
+
+          <option value="DKK" > DKK 丹麥克朗</option>
+
+          <option value="DOP" > DOP 多米尼加比索</option>
+
+          <option value="DZD" > DZD 阿爾及利亞第納爾</option>
+
+          <option value="EGP" > EGP 埃及鎊</option>
+
+          <option value="ERN" > ERN 厄立特里亞納克法</option>
+
+          <option value="ETB" > ETB 埃塞俄比亞比爾</option>
+
+          <option value="EUR" > EUR 歐元</option>
+
+          <option value="FJD" > FJD 斐濟元</option>
+
+          <option value="FKP" > FKP 福克蘭群島鎊</option>
+
+          <option value="GBP" > GBP 英鎊</option>
+
+          <option value="GEL" > GEL 格魯吉亞拉里</option>
+
+          <option value="GHS" > GHS 加納塞地</option>
+
+          <option value="GIP" > GIP 直布羅陀鎊</option>
+
+          <option value="GMD" > GMD 岡比亞達拉西</option>
+
+          <option value="GNF" > GNF 幾內亞法郎</option>
+
+          <option value="GTQ" > GTQ 危地馬拉格查爾</option>
+
+          <option value="GYD" > GYD 圭亞那元</option>
+
+          <option value="HKD" > HKD 港幣</option>
+
+          <option value="HNL" > HNL 洪都拉斯倫皮拉</option>
+
+          <option value="HRK" > HRK 克羅地亞庫納</option>
+
+          <option value="HTG" > HTG 海地古德</option>
+
+          <option value="HUF" > HUF 匈牙利福林</option>
+
+          <option value="IDR" > IDR 印度尼西亞盧比</option>
+
+          <option value="ILS" > ILS 以色列新謝克爾</option>
+
+          <option value="INR" > INR 印度盧比</option>
+
+          <option value="IQD" > IQD 伊拉克第納爾</option>
+
+          <option value="IRR" > IRR 伊朗里亞爾</option>
+
+          <option value="ISK" > ISK 冰島克郎</option>
+
+          <option value="JMD" > JMD 牙買加元</option>
+
+          <option value="JOD" > JOD 約旦第納爾</option>
+
+          <option value="JPY" > JPY 日元</option>
+
+          <option value="KES" > KES 肯尼亞先令</option>
+
+          <option value="KGS" > KGS 吉爾吉斯斯坦索姆</option>
+
+          <option value="KHR" > KHR 柬埔寨瑞爾</option>
+
+          <option value="KMF" > KMF 科摩羅法郎</option>
+
+          <option value="KPW" > KPW 朝鮮元</option>
+
+          <option value="KRW" > KRW 韓元</option>
+
+          <option value="KWD" > KWD 科威特第納爾</option>
+
+          <option value="KYD" > KYD 開曼群島元</option>
+
+          <option value="KZT" > KZT 哈薩克斯坦堅戈</option>
+
+          <option value="LAK" > LAK 老撾基普</option>
+
+          <option value="LBP" > LBP 黎巴嫩鎊</option>
+
+          <option value="LKR" > LKR 斯里蘭卡盧比</option>
+
+          <option value="LRD" > LRD 利比里亞元</option>
+
+          <option value="LSL" > LSL 萊索托洛蒂</option>
+
+          <option value="LYD" > LYD 利比亞第納爾</option>
+
+          <option value="MAD" > MAD 摩洛哥迪拉姆</option>
+
+          <option value="MDL" > MDL 摩爾多瓦列伊</option>
+
+          <option value="MGA" > MGA 馬達加斯加阿里亞里</option>
+
+          <option value="MKD" > MKD 馬其頓代納爾</option>
+
+          <option value="MMK" > MMK 緬甸元</option>
+
+          <option value="MNT" > MNT 蒙古圖格里克</option>
+
+          <option value="MOP" > MOP 澳門元</option>
+
+          <option value="MRO" > MRO 毛里塔尼亞烏吉亞</option>
+
+          <option value="MUR" > MUR 毛里求斯盧比</option>
+
+          <option value="MVR" > MVR 馬爾代夫拉菲亞</option>
+
+          <option value="MWK" > MWK 馬拉維克瓦查</option>
+
+          <option value="MXN" > MXN 墨西哥比索</option>
+
+          <option value="MXV" > MXV 墨西哥(資金)</option>
+
+          <option value="MYR" > MYR 林吉特</option>
+
+          <option value="MZN" > MZN 莫桑比克新梅蒂卡爾</option>
+
+          <option value="NAD" > NAD 納米比亞元</option>
+
+          <option value="NGN" > NGN 尼日利亞奈拉</option>
+
+          <option value="NIO" > NIO 尼加拉瓜新科多巴</option>
+
+          <option value="NOK" > NOK 挪威克朗</option>
+
+          <option value="NPR" > NPR 尼泊爾盧比</option>
+
+          <option value="NZD" > NZD 新西蘭元</option>
+
+          <option value="OMR" > OMR 阿曼里亞爾</option>
+
+          <option value="PAB" > PAB 巴拿馬巴波亞</option>
+
+          <option value="PEN" > PEN 秘魯新索爾</option>
+
+          <option value="PGK" > PGK 巴布亞新幾內亞基那</option>
+
+          <option value="PHP" > PHP 菲律賓比索</option>
+
+          <option value="PKR" > PKR 巴基斯坦盧比</option>
+
+          <option value="PLN" > PLN 波蘭茲羅提</option>
+
+          <option value="PYG" > PYG 巴拉圭瓜拉尼</option>
+
+          <option value="QAR" > QAR 卡塔爾里亞爾</option>
+
+          <option value="RON" > RON 羅馬尼亞列伊</option>
+
+          <option value="RSD" > RSD 塞爾維亞第納爾</option>
+
+          <option value="RUB" > RUB 俄羅斯盧布</option>
+
+          <option value="RWF" > RWF 盧旺達法郎</option>
+
+          <option value="SAR" > SAR 沙特里亞爾</option>
+
+          <option value="SBD" > SBD 所羅門群島元</option>
+
+          <option value="SCR" > SCR 塞舌爾盧比</option>
+
+          <option value="SDG" > SDG 蘇丹磅</option>
+
+          <option value="SEK" > SEK 瑞典克朗</option>
+
+          <option value="SGD" > SGD 新加坡元</option>
+
+          <option value="SHP" > SHP 聖赫勒拿鎊</option>
+
+          <option value="SLL" > SLL 塞拉利昂利昂</option>
+
+          <option value="SOS" > SOS 索馬里先令</option>
+
+          <option value="SRD" > SRD 蘇里南元</option>
+
+          <option value="SSP" > SSP 南蘇丹鎊</option>
+
+          <option value="STD" > STD 聖多美多布拉</option>
+
+          <option value="SVC" > SVC 薩爾瓦多科朗</option>
+
+          <option value="SYP" > SYP 敘利亞鎊</option>
+
+          <option value="SZL" > SZL 斯威士蘭里蘭吉尼</option>
+
+          <option value="THB" > THB 泰銖</option>
+
+          <option value="TJS" > TJS 塔吉克斯坦索莫尼</option>
+
+          <option value="TMT" > TMT 土庫曼斯坦馬納特</option>
+
+          <option value="TND" > TND 突尼斯第納爾</option>
+
+          <option value="TOP" > TOP 湯加潘加</option>
+
+          <option value="TRY" > TRY 土耳其里拉</option>
+
+          <option value="TTD" > TTD 特立尼達多巴哥元</option>
+
+          <option value="TWD" > TWD 新台幣</option>
+
+          <option value="TZS" > TZS 坦桑尼亞先令</option>
+
+          <option value="UAH" > UAH 烏克蘭格里夫納</option>
+
+          <option value="UGX" > UGX 烏干達先令</option>
+
+          <option value="USD" > USD 美元</option>
+
+          <option value="UYU" > UYU 烏拉圭比索</option>
+
+          <option value="UZS" > UZS 烏茲別克斯坦蘇姆</option>
+
+          <option value="VEF" > VEF 委內瑞拉玻利瓦爾</option>
+
+          <option value="VND" > VND 越南盾</option>
+
+          <option value="VUV" > VUV 瓦努阿圖瓦圖</option>
+
+          <option value="WST" > WST 薩摩亞塔拉</option>
+
+          <option value="XAF" > XAF 中非法郎</option>
+
+          <option value="XAG" > XAG 銀價盎司</option>
+
+          <option value="XAU" > XAU 金價盎司</option>
+
+          <option value="XCD" > XCD 東加勒比元</option>
+
+          <option value="XDR" > XDR IMF特別提款權</option>
+
+          <option value="XOF" > XOF 西非法郎</option>
+
+          <option value="XPD" > XPD 鈀價盎司</option>
+
+          <option value="XPF" > XPF 太平洋法郎</option>
+
+          <option value="XPT" > XPT 珀價盎司</option>
+
+          <option value="YER" > YER 也門里亞爾</option>
+
+          <option value="ZAR" > ZAR 南非蘭特</option>
+
+          <option value="ZMW" > ZMW 贊比亞克瓦查</option>
+
+          <option value="ZWL" > ZWL 津巴布韋元</option>
+
+          <option value="GGP" > GGP 根西島鎊</option>
+
+      </select>
+      <select class="search-filter" name="payment_provider" searchable>
+        <option value="">付款方式</option>
+
+          <option value="CASH_DEPOSIT" >現金存款</option>
+
+          <option value="NATIONAL_BANK" >銀行轉賬</option>
+
+          <option value="ALIPAY"  selected >支付寶</option>
+
+          <option value="WECHAT_PAY" >微信支付</option>
+
+          <option value="ITUNES_GIFT_CARD" >iTunes禮品卡</option>
+
+          <option value="PAYTM" >Paytm</option>
+
+          <option value="OTHER" >其它</option>
+
+      </select>
+    </div>
+
+    <a href="javascript:;" class="btn-search"><span class="search-input-icon"></span></a>
+  </div>
+
+
+
+  <div class="container">
+    <table class="table buy">
+      <thead>
+        <tr>
+          <th class="pl-30">暱稱</th>
+          <th>信用</th>
+          <th>付款方式</th>
+          <th>限額</th>
+          <th>價格</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="odd">
+          <td class="td-name pl-30">
+            <a href="/user/1000000658"><img class="user-head" src="https://s3.ap-northeast-2.amazonaws.com/coincola.user/avatar/84d29ae409374be2ae68bb7cef4f94c3.jpg" alt=""></a>
+            <a href="/user/1000000658">jinxuefu</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 48 |
+            好評度 97% | 信任 14
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">1000-21974 CNY</td>
+          <td class="td-price">37862.54 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/16899" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="even">
+          <td class="td-name pl-30">
+            <a href="/user/1000057847"><img class="user-head" src="https://s3.ap-northeast-2.amazonaws.com/coincola.user/avatar/1000057847-1508124445.png" alt=""></a>
+            <a href="/user/1000057847">ads118</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 449 |
+            好評度 96% | 信任 238
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">500-13728 CNY</td>
+          <td class="td-price">37866.29 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/22506" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="odd">
+          <td class="td-name pl-30">
+            <a href="/user/1000050864"><img class="user-head" src="https://s3.ap-northeast-2.amazonaws.com/coincola.user/avatar/1507121127294_42437.png" alt=""></a>
+            <a href="/user/1000050864">btc000</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 292 |
+            好評度 100% | 信任 97
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">3000-50000 CNY</td>
+          <td class="td-price">37866.29 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/21575" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="even">
+          <td class="td-name pl-30">
+            <a href="/user/1000039796"><img class="user-head" src="https://s3.ap-northeast-2.amazonaws.com/coincola.user/avatar/7fd70e0b20f94b238a7a28ac02b14bbe.jpg" alt=""></a>
+            <a href="/user/1000039796">lintingbtc</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 30 |
+            好評度 100% | 信任 16
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">10000-100000 CNY</td>
+          <td class="td-price">37866.29 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/23411" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="odd">
+          <td class="td-name pl-30">
+            <a href="/user/1000060713"><img class="user-head" src="/static/imgs/head_portrait60.png" alt=""></a>
+            <a href="/user/1000060713">lookdo1</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 3 |
+            好評度 100% | 信任 0
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">10000-27864 CNY</td>
+          <td class="td-price">37870.04 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/23527" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="even">
+          <td class="td-name pl-30">
+            <a href="/user/1000063911"><img class="user-head" src="/static/imgs/head_portrait60.png" alt=""></a>
+            <a href="/user/1000063911">bitcoinok</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 1 |
+            好評度 0% | 信任 0
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">14000-14450 CNY</td>
+          <td class="td-price">37870.04 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/23559" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="odd">
+          <td class="td-name pl-30">
+            <a href="/user/1000001823"><img class="user-head" src="https://s3.ap-northeast-2.amazonaws.com/coincola.user/avatar/5d02dd701a6545de8fc2cd76274ad3f6.jpg" alt=""></a>
+            <a href="/user/1000001823">zhouhaibo</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 142 |
+            好評度 100% | 信任 77
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">500-12443 CNY</td>
+          <td class="td-price">37907.54 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/17292" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="even">
+          <td class="td-name pl-30">
+            <a href="/user/1000011405"><img class="user-head" src="/static/imgs/head_portrait60.png" alt=""></a>
+            <a href="/user/1000011405">zj3268732</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 71 |
+            好評度 100% | 信任 34
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">500-7883 CNY</td>
+          <td class="td-price">37907.54 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/20188" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="odd">
+          <td class="td-name pl-30">
+            <a href="/user/1000012201"><img class="user-head" src="/static/imgs/head_portrait60.png" alt=""></a>
+            <a href="/user/1000012201">ericli802</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 44 |
+            好評度 100% | 信任 20
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">100-3475 CNY</td>
+          <td class="td-price">37907.54 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/23373" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="even">
+          <td class="td-name pl-30">
+            <a href="/user/1000058355"><img class="user-head" src="/static/imgs/head_portrait60.png" alt=""></a>
+            <a href="/user/1000058355">gaomingli</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 39 |
+            好評度 100% | 信任 21
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">2000-100000 CNY</td>
+          <td class="td-price">37945.03 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/22728" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="odd">
+          <td class="td-name pl-30">
+            <a href="/user/1000063553"><img class="user-head" src="/static/imgs/head_portrait60.png" alt=""></a>
+            <a href="/user/1000063553">hongfan01</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 5 |
+            好評度 100% | 信任 4
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">9400-9500 CNY</td>
+          <td class="td-price">37945.03 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/23552" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="even">
+          <td class="td-name pl-30">
+            <a href="/user/1000055530"><img class="user-head" src="https://s3.ap-northeast-2.amazonaws.com/coincola.user/avatar/ba672acc90dc4e90b6eebc78a30343fa.jpg" alt=""></a>
+            <a href="/user/1000055530">zhou88</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 97 |
+            好評度 98% | 信任 33
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">37500-236779 CNY</td>
+          <td class="td-price">37975.03 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/22282" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="odd">
+          <td class="td-name pl-30">
+            <a href="/user/1000060071"><img class="user-head" src="/static/imgs/head_portrait60.png" alt=""></a>
+            <a href="/user/1000060071">miaozhuang</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 0 |
+            好評度 0% | 信任 0
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">2000-3016 CNY</td>
+          <td class="td-price">38000 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/23562" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="even">
+          <td class="td-name pl-30">
+            <a href="/user/1000007154"><img class="user-head" src="https://s3.ap-northeast-2.amazonaws.com/coincola.user/avatar/40a1f094399143659d6b13578d7915c7.jpg" alt=""></a>
+            <a href="/user/1000007154">wangmiaoxin</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 49 |
+            好評度 100% | 信任 27
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">3700-3760 CNY</td>
+          <td class="td-price">38010 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/19284" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="odd">
+          <td class="td-name pl-30">
+            <a href="/user/1000002991"><img class="user-head" src="/static/imgs/head_portrait60.png" alt=""></a>
+            <a href="/user/1000002991">transparentz</a>
+            <span class="state OFFLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 34 |
+            好評度 100% | 信任 2
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">2999-3000 CNY</td>
+          <td class="td-price">38020.02 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/23529" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="even">
+          <td class="td-name pl-30">
+            <a href="/user/1000022081"><img class="user-head" src="https://s3.ap-northeast-2.amazonaws.com/coincola.user/avatar/54f4dd138da94abf8ab16c3d5de9f741.jpg" alt=""></a>
+            <a href="/user/1000022081">maxx</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 827 |
+            好評度 99% | 信任 281
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">100-3000 CNY</td>
+          <td class="td-price">38038.77 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/19080" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="odd">
+          <td class="td-name pl-30">
+            <a href="/user/1000010548"><img class="user-head" src="/static/imgs/head_portrait60.png" alt=""></a>
+            <a href="/user/1000010548">liwen</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 607 |
+            好評度 99% | 信任 389
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">500-44145 CNY</td>
+          <td class="td-price">38057.52 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/17812" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="even">
+          <td class="td-name pl-30">
+            <a href="/user/1000036512"><img class="user-head" src="https://s3.ap-northeast-2.amazonaws.com/coincola.user/avatar/4458522097234c15aaac1b390eec42e0.jpg" alt=""></a>
+            <a href="/user/1000036512">redbeiu</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 672 |
+            好評度 99% | 信任 329
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">1000-5000 CNY</td>
+          <td class="td-price">38057.52 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/19610" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="odd">
+          <td class="td-name pl-30">
+            <a href="/user/1000056874"><img class="user-head" src="/static/imgs/head_portrait60.png" alt=""></a>
+            <a href="/user/1000056874">ina2017</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 1 |
+            好評度 100% | 信任 0
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">100-1950 CNY</td>
+          <td class="td-price">38057.52 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/23560" class="btn submit">購買</a></td>
+        </tr>
+
+        <tr class="even">
+          <td class="td-name pl-30">
+            <a href="/user/1000007476"><img class="user-head" src="https://s3.ap-northeast-2.amazonaws.com/coincola.user/avatar/1000007476-1505570656.png" alt=""></a>
+            <a href="/user/1000007476">anneone</a>
+            <span class="state ONLINE"></span>
+          </td>
+          <td class="td-normal">
+            交易 782 |
+            好評度 100% | 信任 282
+          </td>
+          <td>支付寶</td>
+          <td class="td-name">50-3000 CNY</td>
+          <td class="td-price">38132.51 CNY</td>
+          <td class="pr-30"><a href="/ad-detail/17307" class="btn submit">購買</a></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <div class="no-record"  style="display: none;"  >
+      <div class="icon-no-record"></div>
+      <div class="text-no-record">暫無廣告</div>
+    </div>
+
+    <div class="pagination" total="100" limit="20">
+    </div>
+  </div>
+  <div class="footer">
+<div class="container">
+	<span class="ta-c company-info">  ©2016 - 2017 CoinCola All Rights Reserved </span>
+	<div class="contact-us">
+		<a href="javascript:;" class="icon-cu icon-qq"><img src="/static/imgs/qq_group_qrcode.jpg" class="wechat-qrcode qq-group-qrcode" alt=""></a>
+		<a href="javascript:;" class="icon-cu icon-wechat"><img src="/static/imgs/wechat_id.jpg" class="wechat-qrcode" alt=""></a>
+		<a href="https://www.facebook.com/CoinCola/" target="_blank" alt="facebook" class="icon-cu icon-fb"></a>
+		<a href="https://twitter.com/coincola7" target="_blank" alt="twitter" class="icon-cu icon-twitter"></a>
+		<a href="/cdn-cgi/l/email-protection#54373b3a2035372014373b3d3a373b38357a373b39" target="_blank" class="icon-cu icon-mail"></a>
+	</div>
+	
+  <span class="fr other-link">
+
+    <a href="/about">關於我們</a>|
+    <a href="/fee" target="_blank">費率說明</a>|
+    <a href="/help" target="_blank">常見問題</a>|
+
+    <div class="language-select">
+	  	<div class="lang-current">繁體中文 <span class="arrow-right"></span></div>
+	  	<div class="more-language">
+	  		<a class="language-item" href="/zh-HK/buy?country_code=CN&payment_provider=ALIPAY&currency=CNY">繁體中文</a>
+	  		<a class="language-item" href="/zh-CN/buy?country_code=CN&payment_provider=ALIPAY&currency=CNY">简体中文</a>
+	  		<a class="language-item" href="/en-US/buy?country_code=CN&payment_provider=ALIPAY&currency=CNY">English</a>
+	  	</div>
+	  </div>
+  </span>
+
+</div>
+
+</div>
+
+<script style="display: none !important;">!function(e,t,r,n,c,a,l){function i(t,r){return r=e.createElement('div'),r.innerHTML='<a href="'+t.replace(/"/g,'&quot;')+'"></a>',r.childNodes[0].getAttribute('href')}function o(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return i(r)}try{for(c=e.getElementsByTagName('a'),l='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(a=c[n]).href.indexOf(l))>-1&&(a.href='mailto:'+o(a.href,t+l.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(a=c[n]).parentNode.replaceChild(e.createTextNode(o(a.getAttribute('data-cfemail'),0)),a)}catch(e){}}catch(e){}}(document);</script></body>
+<!-- <script src="/zh-HK/buy_c4b7254312.js"></script> -->
+<script src="/static/js/common_5a100d1424.js" charset="utf-8"></script>
+<script src="https://cdn.ronghub.com/RongIMLib-2.2.5.min.js"></script>
+<script src="/static/js/buy_c4b7254312.js" charset="utf-8"></script>
+</html>
