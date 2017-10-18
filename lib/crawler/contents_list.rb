@@ -7,8 +7,19 @@ module Crawler
       @code = rs['code']
       @message = rs['message']
       @data = rs['data']
-      @advertisements = Advertisement.serialize(rs['data']['advertisements'])
+      @advertisements = rs['data']['advertisements'].map{|o|
+                          Coincola::Advertisement.find_or_initialize_by(o)}
       @total = rs['data']['total']
     end
+
+    # def self.serialize_advertisement obj_arr
+    #   obj_arr.map{|o| Coincola::Advertisement.new(obj_arr)}
+    # end
+
+    def save
+      ActiveRecord::Base.transaction do
+      end
+    end
+
   end
 end

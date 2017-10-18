@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  feedback_score: 1
+  trade_count: 1
+  trusted_count: 1
+
+two:
+  feedback_score: 1
+  trade_count: 1
+  trusted_count: 1
