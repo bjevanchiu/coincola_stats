@@ -8,6 +8,7 @@ class CreateCoincolaAdvertisements < ActiveRecord::Migration[5.1]
       t.string :payment_provider
       t.float :price
       t.integer :advertiser_id
+      t.string :advert_type
 
       t.timestamps
     end

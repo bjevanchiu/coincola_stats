@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20171018033423) do
     t.string "payment_provider"
     t.float "price", limit: 24
     t.integer "advertiser_id"
+    t.string "advert_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,13 +28,7 @@ ActiveRecord::Schema.define(version: 20171018033423) do
   create_table "coincola_advertisers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "avatar"
-    t.integer "reputation_id"
     t.string "state"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "coincola_reputations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "feedback_score"
     t.integer "trade_count"
     t.integer "trusted_count"
